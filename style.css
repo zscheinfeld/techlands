@@ -33,9 +33,9 @@ body{
 
 .item{
     background-color: white;
-    transition-property: flex-grow height;
+    transition-property: width height;
     transition-duration: 1s;
-    flex-grow: 1;
+    width: 80px;
     height: 100%;
     border-left: black 1.5px solid;
     border-right: black 1.5px solid;
@@ -55,9 +55,9 @@ body{
 
 .itemselect{
     background-color: rgb(251, 255, 0);
-    transition-property: flex-grow height;
+    transition-property: width height;
     transition-duration: 1s;
-    flex-grow: 30;
+    width: calc(100% - 640px);
     height: 100%;
     border-left: black 1.5px solid;
     border-right: black 1.5px solid;
@@ -106,5 +106,16 @@ body{
     font-size: 16px;
     padding-right: 40px;
     font-family: 'DM Sans', sans-serif;
+
+}
+
+#homevideo{
+
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.center{
 
 }
