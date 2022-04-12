@@ -20,27 +20,34 @@ body{
 }
 
 .rightcolumn{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     width: 20vw;
-    border-left: black 1.5px solid;
-    border-right: black 1.5px solid;
-    border-top: black 3px solid;
-    border-bottom: black 3px solid;
+    border-left: rgb(255, 255, 255) 1.5px solid;
+    border-right: rgb(255, 255, 255) 1.5px solid;
+    border-top: rgb(255, 255, 255) 3px solid;
+    border-bottom: rgb(255, 255, 255) 3px solid;
     padding: 20px;
     padding-left: 30px;
+    overflow: scroll;
+}
+
+.itemmin{
+    transition-property: width;
+    transition-duration: 1s;
+    width: 0px;
 }
 
 .item{
-    background-color: white;
+    background-color: rgba(0, 0, 0, .6);
     transition-property: width height;
     transition-duration: 1s;
-    width: 80px;
+    width: 100px;
     height: 100%;
-    border-left: black 1.5px solid;
-    border-right: black 1.5px solid;
-    border-top: black 3px solid;
-    border-bottom: black 3px solid;
+    border-left: rgb(255, 255, 255) 1.5px solid;
+    border-right: rgb(255, 255, 255) 1.5px solid;
+    border-top: rgb(255, 255, 255) 3px solid;
+    border-bottom: rgb(255, 255, 255) 3px solid;
     text-orientation: sideways;
     font-size: 20px;
     display: flex;
@@ -53,16 +60,18 @@ body{
     padding-bottom: 0px;
 }
 
+
+
 .itemselect{
-    background-color: rgb(251, 255, 0);
+    background-color: rgb(255, 255, 255);
     transition-property: width height;
     transition-duration: 1s;
-    width: calc(100% - 640px);
+    width: calc(100% - 600px);
     height: 100%;
-    border-left: black 1.5px solid;
-    border-right: black 1.5px solid;
-    border-top: black 3px solid;
-    border-bottom: black 3px solid;
+    border-left: rgb(255, 255, 255) 1.5px solid;
+    border-right: rgb(255, 255, 255) 1.5px solid;
+    border-top: rgb(255, 255, 255) 3px solid;
+    border-bottom: rgb(255, 255, 255) 3px solid;
     text-orientation: sideways;
     font-size: 20px;
     display: flex;
@@ -78,14 +87,25 @@ body{
 .header{
     font-family: 'DM Mono', monospace;
     font-size: 32px;
-    color: black
+    color: rgb(0, 0, 0);
+    line-height: 34px;
 }
 
 .slides{
     display: none;
 }
 
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
 .presentation{
+    animation: fadeIn .7s;
+     -webkit-animation: fadeIn .7s;
+    -moz-animation: fadeIn .7s;
+    -o-animation: fadeIn .7s;
+    -ms-animation: fadeIn .7s;
     writing-mode:initial;
     text-orientation: upright;
     display: none;
@@ -101,11 +121,12 @@ body{
 
 .description{
     padding-top: 20px;
-    font-family: 'DM Mono', monospace;
-    line-height: 24px;
-    font-size: 16px;
+    line-height: 20px;
+    font-size: 14px;
     padding-right: 40px;
     font-family: 'DM Sans', sans-serif;
+    font-weight:600;
+    color: rgba(0,0,0,.9);
 
 }
 
@@ -116,6 +137,108 @@ body{
   width: 100%;
 }
 
-.center{
-
+.hero img{
+    object-fit: cover;
+    height: 100%;
 }
+
+.dillon{
+    background-image: url("img/1.png");
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-blend-mode: multiply;
+}
+
+.dillon{
+    background-image: url("img/1.png");
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-blend-mode: multiply;
+}
+
+.huanzhe{
+    background-image: url("img/3.jpg");
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-blend-mode: multiply;
+}
+
+.mandy{
+    background-image: url("img/2.jpg");
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-blend-mode: multiply;
+}
+
+.preeti{
+    background-image: url("img/2.jpg");
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-blend-mode: multiply;
+}
+
+.zach{
+    background-image: url("img/4.jpg");
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-blend-mode: multiply;
+}
+
+.vrinda{
+    background-image: url("img/5.gif");
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-blend-mode: multiply;
+}
+
+.chloe{
+    background-image: url("img/6.gif");
+    background-position: 15% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-blend-mode: multiply;
+}
+
+.louis{
+    background-image: url("img/7.jpg");
+    background-position: 15% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-blend-mode: multiply;
+}
+
+.preeti{
+    background-image: url("img/8.png");
+    background-position: 15% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-blend-mode: multiply;
+}
+
+.name{
+    color: rgb(235, 235, 235);
+    font-size: 16px;
+}
+
+.hero{
+    width: 100%;
+    background-color: black;
+}
+
