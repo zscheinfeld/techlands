@@ -6,6 +6,7 @@ $(document).ready(function(){
         if($(this)[0].id == "main"){
 
         }
+
         else{
         $(this).toggleClass("item")
         $(this).toggleClass("itemselect")

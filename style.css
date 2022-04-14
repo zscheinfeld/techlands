@@ -232,6 +232,15 @@ body{
     background-blend-mode: multiply;
 }
 
+.owen{
+    background-image: url("img/9.jpeg");
+    background-position: 15% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-blend-mode: multiply;
+}
+
 .name{
     color: rgb(235, 235, 235);
     font-size: 16px;
