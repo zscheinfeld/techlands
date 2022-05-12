@@ -2,41 +2,41 @@ $(document).ready(function(){
 
     var studentarray = [0,0,0,0,0,0,0,0,0];
 
-    $(".maingrid").children().mouseenter(function(){
-        if($(this)[0].id == "main"){
+    // $(".maingrid").children().mouseenter(function(){
+    //     if($(this)[0].id == "main"){
 
-        }
+    //     }
 
-        else{
-        $(this).toggleClass("item")
-        $(this).toggleClass("itemselect")
-        var counter = 0;
-        for (x = 0 ; x<studentarray.length; x++){
-            if (studentarray[x] == 1) {
-                counter = counter + 1
-            }
-        }
-        if (counter == 0){
-            $("#main").removeClass("itemselect")
-            $("#main").addClass("item")
-        }
-        }      
-    })
+    //     else{
+    //     $(this).toggleClass("item")
+    //     $(this).toggleClass("itemselect")
+    //     var counter = 0;
+    //     for (x = 0 ; x<studentarray.length; x++){
+    //         if (studentarray[x] == 1) {
+    //             counter = counter + 1
+    //         }
+    //     }
+    //     if (counter == 0){
+    //         $("#main").removeClass("itemselect")
+    //         $("#main").addClass("item")
+    //     }
+    //     }      
+    // })
 
-    $(".maingrid").children().mouseout(function(){
-        $(this).toggleClass("item")
-        $(this).toggleClass("itemselect") 
-        var counter = 0;
-        for (x = 0 ; x<studentarray.length; x++){
-            if (studentarray[x] == 1) {
-                counter = counter + 1
-            }
-        }
-        if (counter == 0){
-            $("#main").addClass("itemselect")
-            $("#main").removeClass("item")
-        }
-    })
+    // $(".maingrid").children().mouseout(function(){
+    //     $(this).toggleClass("item")
+    //     $(this).toggleClass("itemselect") 
+    //     var counter = 0;
+    //     for (x = 0 ; x<studentarray.length; x++){
+    //         if (studentarray[x] == 1) {
+    //             counter = counter + 1
+    //         }
+    //     }
+    //     if (counter == 0){
+    //         $("#main").addClass("itemselect")
+    //         $("#main").removeClass("item")
+    //     }
+    // })
 
 
     $(".maingrid").children().click(function(event){
@@ -60,15 +60,16 @@ $(document).ready(function(){
                         $(".maingrid").children().eq(x).removeClass("itemmin")
                         $(".maingrid").children().eq(x).addClass("item")
                         $(".maingrid").children("name").show()
-                        $("#main").removeClass("itemselect")
-                        $("#main").removeClass("itemmin")
-                        $("#main").addClass("item")
+                        $("#main").addClass("itemselect")
+                        // $("#main").addClass("itemmin")
+                        // $("#main").addClass("item")
                     }
     
                     if (studentarray[x]==1){
                         $(".maingrid").children().eq(x).removeClass("hero")
                         $(this).children(".presentation").css("display", "none");
                         $(this).children(".name").show();
+                        
                     }
                 } 
                 studentarray = [0,0,0,0,0,0,0,0,0]
@@ -105,6 +106,9 @@ $(document).ready(function(){
                         $(".maingrid").children().eq(x).addClass("hero")
                         $(this).children(".presentation").css("display", "flex");
                         $(this).children(".name").hide();
+
+                        // $("#main").addClass("item")
+                        // $("#main").addClass("itemselect")
                     }
                 }  
             }
