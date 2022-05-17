@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var studentarray = [0,0,0,0,0,0,0,0,0];
+    var studentarray = [0,0,0,0,0,0,0,0,0,0];
 
     // $(".maingrid").children().mouseenter(function(){
     //     if($(this)[0].id == "main"){
@@ -67,12 +67,14 @@ $(document).ready(function(){
     
                     if (studentarray[x]==1){
                         $(".maingrid").children().eq(x).removeClass("hero")
+                        // $(this).children(".presentation").css("display", "none");
                         $(this).children(".presentation").css("display", "none");
                         $(this).children(".name").show();
+
                         
                     }
                 } 
-                studentarray = [0,0,0,0,0,0,0,0,0]
+                studentarray = [0,0,0,0,0,0,0,0,0,0]
             }
     
             else{     
@@ -81,7 +83,7 @@ $(document).ready(function(){
                 $(".maingrid").children().each((function(){ 
                     if (clicked == $(this)[0].id) {
                         if (studentarray[counter] == 0){
-                            studentarray = [0,0,0,0,0,0,0,0,0]
+                            studentarray = [0,0,0,0,0,0,0,0,0,0]
                             studentarray[counter] = 1
                         }
                         else {

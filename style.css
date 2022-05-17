@@ -61,12 +61,11 @@ body{
 }
 
 
-
 .itemselect{
     background-color: rgb(255, 255, 255);
     transition-property: width height;
     transition-duration: 1s;
-    width: calc(100% - 600px);
+    width: calc(100% - 700px);
     height: 100%;
     border-left: rgb(255, 255, 255) 1.5px solid;
     border-right: rgb(255, 255, 255) 1.5px solid;
@@ -100,23 +99,29 @@ body{
     100% {opacity:1;}
   }
 
+
+
+
+
 .presentation{
-    animation: fadeIn .7s;
-     -webkit-animation: fadeIn .7s;
-    -moz-animation: fadeIn .7s;
-    -o-animation: fadeIn .7s;
-    -ms-animation: fadeIn .7s;
+    animation: fadeIn 1s;
+     -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
     writing-mode:initial;
     text-orientation: upright;
     display: none;
     height: 100vh;
+    width: 100%;
     padding-top: 40px;
     justify-content: center;
     align-items:center;
     text-align: left;
-    width: 1200px;
+    /* width: 1200px; */
     letter-spacing: 0px;
     flex-direction: column;
+    background-color: black;
 }
 
 .description{
@@ -151,13 +156,21 @@ body{
     background-blend-mode: multiply;
 }
 
-.dillon{
-    background-image: url("img/1.png");
+.dillon:hover{
+    background-blend-mode: normal;
+}
+
+.jinha{
+    background-image: url("img/10.JPG");
     background-position: 50% 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-clip: content-box;
     background-blend-mode: multiply;
+}
+
+.jinha:hover{
+    background-blend-mode: normal;
 }
 
 .huanzhe{
@@ -169,6 +182,10 @@ body{
     background-blend-mode: multiply;
 }
 
+.huanzhe:hover{
+    background-blend-mode: normal;
+}
+
 .mandy{
     background-image: url("img/2.jpg");
     background-position: 50% 0;
@@ -176,6 +193,10 @@ body{
     background-repeat: no-repeat;
     background-clip: content-box;
     background-blend-mode: multiply;
+}
+
+.mandy:hover{
+    background-blend-mode: normal;
 }
 
 .preeti{
@@ -187,6 +208,10 @@ body{
     background-blend-mode: multiply;
 }
 
+.preeti:hover{
+    background-blend-mode: normal;
+}
+
 .zach{
     background-image: url("img/4.jpg");
     background-position: 50% 0;
@@ -194,10 +219,17 @@ body{
     background-repeat: no-repeat;
     background-clip: content-box;
     background-blend-mode: multiply;
+   
 }
 
+.zach:hover{
+    background-blend-mode: normal;
+}
+
+
+
 .vrinda{
-    background-image: url("img/5.gif");
+    background-image: url("img/5.png");
     background-position: 50% 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -205,13 +237,22 @@ body{
     background-blend-mode: multiply;
 }
 
+.vrinda:hover{
+    background-blend-mode: normal;
+}
+
+
 .chloe{
-    background-image: url("img/6.gif");
+    background-image: url("img/6.png");
     background-position: 15% 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-clip: content-box;
     background-blend-mode: multiply;
+}
+
+.chloe:hover{
+    background-blend-mode: normal;
 }
 
 .louis{
@@ -223,6 +264,10 @@ body{
     background-blend-mode: multiply;
 }
 
+.louis:hover{
+    background-blend-mode: normal;
+}
+
 .preeti{
     background-image: url("img/8.png");
     background-position: 15% 0;
@@ -230,6 +275,10 @@ body{
     background-repeat: no-repeat;
     background-clip: content-box;
     background-blend-mode: multiply;
+}
+
+.preeti:hover{
+    background-blend-mode: normal;
 }
 
 .owen{
@@ -241,9 +290,14 @@ body{
     background-blend-mode: multiply;
 }
 
+.owen:hover{
+    background-blend-mode: normal;
+}
+
 .name{
     color: rgb(235, 235, 235);
     font-size: 16px;
+    pointer-events: none;
 }
 
 .hero{
@@ -251,3 +305,11 @@ body{
     background-color: black;
 }
 
+.x{
+    color: white;
+    font-size: 10px;
+    position: relative;
+    top: -160px;
+    right: 0px;
+    pointer-events: none;
+}
